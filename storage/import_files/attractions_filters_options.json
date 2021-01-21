@@ -1,0 +1,157 @@
+[
+    {
+        "label": "Sort by",
+        "section_id": "sort",
+        "filter_groups": [
+            {
+                "type": "single_select",
+                "key": "sort",
+                "tracking_key": "sort",
+                "label": "Sort by",
+                "options": [
+                    {
+                        "label": "Traveler Favorites",
+                        "value": "ml_score",
+                        "selected": true,
+                        "default": true,
+                        "single_select": true
+                    },
+                    {
+                        "label": "Traveler Ranked",
+                        "value": "ranking",
+                        "selected": false,
+                        "default": false,
+                        "single_select": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "label": "Minimum Traveler Rating",
+        "section_id": "min_rating",
+        "filter_groups": [
+            {
+                "type": "single_select",
+                "key": "min_rating",
+                "tracking_key": "rating",
+                "label": "Minimum Traveler Rating",
+                "options": [
+                    {
+                        "label": "3",
+                        "value": "3",
+                        "selected": false,
+                        "count": "1",
+                        "default": false
+                    },
+                    {
+                        "label": "4",
+                        "value": "4",
+                        "selected": false,
+                        "count": "1",
+                        "default": false
+                    },
+                    {
+                        "label": "5",
+                        "value": "5",
+                        "selected": false,
+                        "count": "0",
+                        "default": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "label": "Attraction Category",
+        "section_id": "subcategory",
+        "filter_groups": [
+            {
+                "type": "single_select",
+                "key": "subcategory",
+                "tracking_key": "category",
+                "label": "Attraction Category",
+                "options": [
+                    {
+                        "label": "Surprise me",
+                        "value": "0",
+                        "selected": true,
+                        "count": "1",
+                        "default": true,
+                        "single_select": true
+                    },
+                    {
+                        "label": "Water & Amusement Parks",
+                        "value": "52",
+                        "selected": false,
+                        "count": "1",
+                        "default": false,
+                        "single_select": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "label": "Attraction Type",
+        "section_id": "subtype",
+        "parent_section_id": "subcategory",
+        "filter_groups": [
+            {
+                "type": "multi_select",
+                "key": "subtype",
+                "tracking_key": "type",
+                "label": "Attraction Type",
+                "options": [
+                    {
+                        "label": "All",
+                        "value": "0",
+                        "selected": true,
+                        "count": "1",
+                        "default": true,
+                        "single_select": true
+                    },
+                    {
+                        "label": "Water Parks",
+                        "value": "118",
+                        "selected": false,
+                        "count": "1",
+                        "default": false,
+                        "single_select": false,
+                        "parent_id": "52"
+                    },
+                    {
+                        "label": "Theme Parks",
+                        "value": "98",
+                        "selected": false,
+                        "count": "1",
+                        "default": false,
+                        "single_select": false,
+                        "parent_id": "52"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "label": "",
+        "section_id": "bookable_first",
+        "filter_groups": [
+            {
+                "type": "single_select",
+                "key": "bookable_first",
+                "tracking_key": "onlinebookable",
+                "label": "Book online first",
+                "options": [
+                    {
+                        "label": "Book online first",
+                        "value": "true",
+                        "selected": false,
+                        "count": "1",
+                        "default": false
+                    }
+                ]
+            }
+        ]
+    }
+]

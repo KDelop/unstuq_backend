@@ -1,0 +1,8 @@
+{
+    "name": "api documentation",
+    "version": "0.1.0",
+    "description": "unstuq endpoints",
+    "title": "unstuq endpoints",
+    "url" : "https://devapi.unstuq.com/api/v1",
+    "sampleUrl" : "https://devapi.unstuq.com/api/v1"
+  }
